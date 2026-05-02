@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://wm2rfkplufka"]
+
+[ext_resource type="PackedScene" uid="uid://x22d1tvng8mw" path="res://car.tscn" id="1_3xulp"]
+
+[sub_resource type="Environment" id="Environment_pr58e"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ts055"]
+
+[sub_resource type="Compositor" id="Compositor_o8rcd"]
+
+[node name="Node3D" type="Node3D" unique_id=861089770]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=916403102]
+environment = SubResource("Environment_pr58e")
+camera_attributes = SubResource("CameraAttributesPractical_ts055")
+compositor = SubResource("Compositor_o8rcd")
+
+[node name="Car" parent="." unique_id=1530408680 instance=ExtResource("1_3xulp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.854929, 0.51356447, 1.0147233)

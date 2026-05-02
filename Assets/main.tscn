@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dagl2jsi6iqyj"]
+
+[ext_resource type="PackedScene" uid="uid://x22d1tvng8mw" path="res://car.tscn" id="1_fhhcb"]
+
+[sub_resource type="Environment" id="Environment_yjg56"]
+
+[node name="main" type="Node3D" unique_id=1349392220]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=734055993]
+environment = SubResource("Environment_yjg56")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=2134757293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5035958, 3.9277492, 1.7817571)
+
+[node name="Car" parent="WorldEnvironment" unique_id=1530408680 instance=ExtResource("1_fhhcb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48003006, 0.5341363, -0.63026834)

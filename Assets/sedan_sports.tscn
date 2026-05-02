@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c86hwhtwlgq28"]
+
+[ext_resource type="PackedScene" uid="uid://8exmygolx2je" path="res://Assets/sedan-sports.glb" id="1_nmo8j"]
+
+[node name="sedan-sports" unique_id=1422098984 instance=ExtResource("1_nmo8j")]
